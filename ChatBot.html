@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChatBot UI</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/702b11ccd7.js" crossorigin="anonymous"></script>
+ <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<input type="checkbox" id="open-close-chat">
+	<label for="open-close-chat">
+		<i class="far fa-comment-dots fa-4x rt-bottom orange start-chat chat-icon" ></i>
+		<i class="fas fa-comment-slash fa-4x rt-bottom orange close-chat chat-icon"></i>
+	</label>
+	<div class="chat-wrapper">
+		<div class="upeer-half orange">
+			<span style="font-size:30px; font-weight: 700; font-family:'DM Sans';">IRIS</span>
+			<div class="displayInline">
+				<span style="font-size:22px; font-weight: 700; font-family:'DM Sans';">Hello</span>
+				<img src="./img/hand.png">
+			</div><br>
+			<span style="font-size:18px; font-weight: 500; font-family:'DM Sans';">I am Iris, a Virtual Assistant<br>
+				How may I help you?</span><br>
+		</div>
+		<div class="shape-circle orange robot-wrapper box-shadow">
+			<img src="./img/robot.png">
+		</div>
+		<div class="inner-half">
+			<div class="displayInline">
+				<span style="font-size:18px; font-weight: 500; font-family:'DM Sans';">Frequently Asked Question</span>
+				<i class="fas fa-question-circle orange shape-circle" style=""></i>
+			</div>
+			<ul>
+				<li>Can I redeem my FB before the original term?</li>
+				<li>How do I pay my Credit card bill?</li>
+				<li>How can I get my Account Statement?</li>
+				<li>What is the tenure of Fixed Deposit?</li>
+			</ul>
+			<button class="startConversation">
+				<div class="displayInline">
+					<img src="./img/conversation.png">
+					<span>Start a New Conversation</span>
+				</div>
+			</button>
+		</div>
+	</div>
+</body>
+</html>

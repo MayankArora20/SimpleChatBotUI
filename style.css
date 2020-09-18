@@ -1,0 +1,153 @@
+html{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.orange {
+	background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
+	color: white;
+}
+
+.displayInline *{
+	display: inline;
+}
+
+.shape-circle {
+	border-radius: 50%;
+}
+
+.box-shadow {
+	box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
+}
+
+.black-border{
+	border: 1px solid black;
+}
+
+.large {
+	width: 150px;
+	height: 100px;
+}
+
+.rt-bottom{
+	position: absolute;
+	right: 30px;
+	bottom: 5px;
+}
+
+.chat-icon {
+	padding: 1%;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+}
+
+i.close-chat {
+	opacity: 0;
+	pointer-events: none;
+}
+
+#open-close-chat{
+	display: none;
+}
+
+#open-close-chat:checked ~ label i.close-chat {
+	opacity: 1;
+	pointer-events: auto;
+	transform: rotate(360deg);
+}
+
+#open-close-chat:checked ~ label i.start-chat {
+	opacity: 0;
+	pointer-events: none;
+	transform: rotate(360deg);
+}
+
+#open-close-chat:checked ~ .chat-wrapper {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.chat-wrapper{
+	position: absolute;
+	right: 30px;
+	bottom: 120px;
+	height: 70%;
+	width: 45%;
+	border-radius: 25px;
+	border: .1px solid black;
+	box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
+	padding: 0;
+	opacity: 0;
+	transition: all 0.6s cubic-bezier(0.68, 0.55, 0.26, 1.5 );
+}
+
+.upeer-half{
+	margin: 0;
+	padding: 9%;
+	padding-top: 2%;
+	height: 40%;
+	border-radius: 25px 25px 0 0;
+	z-index: 0;
+}
+
+.robot-wrapper {
+	z-index: 2;
+	position: absolute;
+	top: 31%;
+	left: 9%;
+	padding: 1%;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.inner-half {
+	margin-left: 5%;
+	padding: 5%;
+	z-index: 1;
+	position: absolute;
+	top: 35%;
+	border: 1px solid E4E4E4;
+	border-radius: 5px;
+	box-shadow: 5px 15px 20px rgba(0,0,0,0.2);
+	background-color: white;
+	width: 80%;
+	height: 50%;
+}
+
+.inner-half ul{
+	list-style: none;
+	padding: 0;
+	margin: 1%;
+}
+
+.inner-half ul li::before {
+	content: "\2022";
+	color: rgba(255, 118, 0, 0.8);
+	box-shadow: 0px 0px 0.1px rgba(255, 118, 0, 0.8);
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+}
+
+.inner-half ul li{
+	border: 0.1px solid #E4E4E4;
+	border-radius: 5px;
+	margin-bottom: 1%;
+	padding: 2%;
+	font-family: DM Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 21px;
+	box-shadow: 5px 1px 2px rgba(0,0,0,0.2);
+}
+
+.startConversation {
+	border-radius: 20px;
+	border: 0.1px solid #E4E4E4;
+	box-shadow: 5px 1px 2px rgba(0,0,0,0.2);
+	padding: 1% 10%;
+	background-color: white;
+	margin-left: 20%;
+}
